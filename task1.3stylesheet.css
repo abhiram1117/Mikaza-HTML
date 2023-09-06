@@ -1,23 +1,33 @@
-body {
-    background-image: url('bg.png');
+ body {
+    background-image: url('images/bg.png');
     background-repeat: repeat-x;
     background-size: auto;
     background-position: center center;
 }
 
 .body-container {
-    margin: auto;
-    width: 1000px;
+    margin: 0 16%;
+    width: min-content;
     font-family: calibri light;
-    overflow:hidden;
+    
 }
 
+.mikasa-container{
+    display:flex;
+    
+}
+
+.mikasa-logo {
+    flex-grow:1;
+}    
+
 .profile-container {
-    float: right;
-    margin-top: -30px;
+    
+    align-self:center;
     color: grey;
     font-size: 12px;
-    margin-right: 15px;
+    
+
 }
 
 .profile-container img {
@@ -38,14 +48,14 @@ body {
     padding: 1px 0px;
     border-top: 1px solid #d9d7d8;
     border-bottom: 1px solid #d9d7d8;
-    width: 2000px;
-    margin-left: -535px;
+    width: 150%;
+    margin-left: -26%;
 }
 
 .navbar-container {
     height: 30px;
     background-color: #d9d7d8;
-    width: 2000px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,6 +73,7 @@ body {
     flex-grow: 0.4;
     margin: 0px;
     text-align: center;
+    padding-left: 0;
 }
 
 .navbar li {
@@ -112,33 +123,34 @@ body {
 
 .options-container-border {
     border-bottom: 1px solid lightgrey;
-    width: 2000px;
-    margin-left: -540px;
+    width: 150%;
+    margin-left: -26%;
 }
 
 .options-container {
-    display: flex;
-    margin-left: 550px;
+    
+    margin-left: 18%;
     font-size: 15px;
 }
 
 .options-container p {
     color: darkblue;
+    float:left;
 }
 
-.options-container ol {
+.options-container ul {
     margin: 0;
     display: flex;
     list-style-type: circle;
     padding-left: 20px;
 }
 
-.options-container ol li {
+.options-container ul li {
     margin: 15px;
     float: left
 }
 
-.options-container ol li::marker {
+.options-container ul li::marker {
     color: grey;
 }
 
@@ -157,6 +169,10 @@ body {
     height: 48px;
 }
 
+.information-container{
+    display;
+}
+
 .diningtable-container {
     display: inline-flex;
     border: 10px solid white;
@@ -164,16 +180,15 @@ body {
 
 .diningtable-container img {
     width: 685px;
-    height: 375px;
+    height: 385px;
     border-right: 10px solid white;
 }
 
 .dresstable-container {
     background-color: #3f3e3c;
     color: #9d9b9b;
-    width: 265px;
-    padding-top: 10px;
-    padding-left: 10px;
+    width: 255px;
+    padding: 10px;
     height: 365px;
 }
 
@@ -184,11 +199,10 @@ body {
 }
 
 .dresstable-container-context {
-    width: 210px;
-    height: 325px;
-    padding: 20px;
-    padding-right: 24px;
-    padding-bottom: 10px;
+    
+    height: 94%;
+    padding: 10px;
+    
     border: 1px solid #575654;
 }
 
@@ -236,7 +250,7 @@ body {
     border: 10px solid black;
 }
 
-.border-right {
+.products-border {
     border-right: 1px solid #eaeaea;
     position: relative;
     height: 160px;
@@ -247,7 +261,7 @@ body {
 
 .stemware-container {
     width: 323px;
-    background-image: url("glass.png");
+    background-image: url("images/glass.png");
     background-position: left bottom;
     background-repeat: no-repeat;
 }
@@ -277,7 +291,7 @@ body {
 
 .home-accents {
     width: 324px;
-    background-image: url("plates.png");
+    background-image: url("images/plates.png");
     background-position: left bottom;
     background-repeat: no-repeat;
 }
@@ -307,7 +321,7 @@ body {
 
 .clearance-container {
     width: 323px;
-    background-image: url("album.png");
+    background-image: url("images/album.png");
     background-position: right bottom;
     background-repeat: no-repeat;
     ;
@@ -345,6 +359,7 @@ body {
 
 .copyright-container {
     margin-top: 5px;
+    flex-grow: 1;
 }
 
 .copyright-container a {
@@ -354,7 +369,7 @@ body {
 
 .email-container {
     float: right;
-    margin-left: 250px;
+    
 }
 
 .email-container p {
@@ -379,3 +394,4 @@ body {
     margin-right: 55px;
     margin-top: 0px;
 }
+ 
